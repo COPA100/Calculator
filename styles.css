@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc-container {
+    background-color: black;
+    border-radius: 50px;
+    height: 875px;
+    width: 500px;
+    display: grid;
+    grid-template-rows: 200px repeat(5,125px);
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+
+.output-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0.5rem;
+}
+
+.output-box > h1 {
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    gap:10px;
+    margin: 0 10px;
+}
+
+.btn {
+    width: 25%;
+    height: 112.5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero-button {
+    width: 250px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2.9rem;
+}
+
+.normal {
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+
+.operator {
+    background-color: rgb(212, 138, 0);
+    color: white;
+    font-size: 5rem;
+}
+
+.special {
+    background-color: rgb(158, 158, 158);
+}
