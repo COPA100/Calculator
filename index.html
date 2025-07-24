@@ -17,33 +17,34 @@
                 <h1>0</h1>
             </div>
             <div class="row">
-                <button class="btn special">AC</button>
-                <button class="btn special">+/-</button>
-                <button class="btn special">%</button>
-                <button class="btn operator">÷</button>
+                <button class="btn special" onclick="clearArray()">AC</button>
+                <!-- p = plus, m = minus, i need to make function tracking if the number is pos or neg -->
+                <button class="btn special" onclick="addToArray('m')">+/-</button>
+                <button class="btn special" onclick="addToArray('%')">%</button>
+                <button class="btn operator" onclick="addToArray('/')">÷</button>
             </div>
             <div class="row">
-                <button class="btn normal">7</button>
-                <button class="btn normal">8</button>
-                <button class="btn normal">9</button>
-                <button class="btn operator">×</button>
+                <button class="btn normal" onclick="addToArray('7')">7</button>
+                <button class="btn normal" onclick="addToArray('8')">8</button>
+                <button class="btn normal" onclick="addToArray('9')">9</button>
+                <button class="btn operator" onclick="addToArray('*')">×</button>
             </div>
             <div class="row">
-                <button class="btn normal">4</button>
-                <button class="btn normal">5</button>
-                <button class="btn normal">6</button>
-                <button class="btn operator">–</button>
+                <button class="btn normal" onclick="addToArray('4')">4</button>
+                <button class="btn normal" onclick="addToArray('5')">5</button>
+                <button class="btn normal" onclick="addToArray('6')">6</button>
+                <button class="btn operator" onclick="addToArray('-')">–</button>
             </div>
             <div class="row">
-                <button class="btn normal">1</button>
-                <button class="btn normal">2</button>
-                <button class="btn normal">3</button>
-                <button class="btn operator">+</button>
+                <button class="btn normal" onclick="addToArray('1')">1</button>
+                <button class="btn normal" onclick="addToArray('2')">2</button>
+                <button class="btn normal" onclick="addToArray('3')">3</button>
+                <button class="btn operator" onclick="addToArray('+')">+</button>
             </div>
             <div class="row">
-                <button class="btn zero-button normal">0</button>
-                <button class="btn normal">.</button>
-                <button class="btn operator">=</button>
+                <button class="btn zero-button normal" onclick="addToArray('0')">0</button>
+                <button class="btn normal" onclick="addToArray('.')">.</button>
+                <button class="btn operator" onclick="addToArray('=')">=</button>
             </div>
         </div>
     </div>
