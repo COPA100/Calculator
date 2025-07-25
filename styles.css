@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin: 0 0.5rem;
+    overflow: hidden;
 }
 
 .output-box > h1 {
