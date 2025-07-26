@@ -22,6 +22,7 @@ function checkInput() {
     }
 }
 
+//finish
 function compileArray() {
     const opIndex = [];
     for (let i = 0; i < array.length; i++) {
@@ -29,7 +30,14 @@ function compileArray() {
             opIndex.push(i);
         }
     }
-    
+    for (let i = 0; i < array.length; i++) {
+        let combo;
+        for (let k = i; k < array.length; k++) {
+            if (isOperator(array(k))) {
+                opIndex.push(k);
+            }
+        }
+    }
     
 }
 
