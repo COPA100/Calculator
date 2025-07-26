@@ -23,10 +23,14 @@ function checkInput() {
 }
 
 function compileArray() {
-    const merged = [];
+    const opIndex = [];
     for (let i = 0; i < array.length; i++) {
-        
+        if (isOperator(array[i])) {
+            opIndex.push(i);
+        }
     }
+    
+    
 }
 
 function isOperator(input) {
